@@ -133,7 +133,11 @@ const snorlaxData = {
 const getBaseStatGreaterThan = (arr, minBaseStat) => {
   // Solution code here...
   let newArr = arr.filter(obj => {
-    return (obj.baseStat > minBaseStat);
+    // return (obj.baseStat > minBaseStat);
+     if(obj.baseStat > minBaseStat){
+      return obj.name;
+     }
+
   });
   return newArr;
 };
