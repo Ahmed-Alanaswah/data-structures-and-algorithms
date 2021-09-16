@@ -170,11 +170,9 @@ Write a function named hasChildrenEntries that is similar to your hasChildrenVal
 
 The input and output of this function are the same as the input and output from challenge 3.
 ------------------------------------------------------------------------------------------------ */
-
 const hasChildrenEntries = (arr, character) => {
   // Solution code here...
 };
-
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 8 - Stretch Goal
 
