@@ -104,7 +104,6 @@ const grandTotal = (stores) => {
   );
   return result;
   // let newArr = [];
-
   // for (let i = 0; i < stores[0].length; i++) {
   //   let sum = 0;
 
