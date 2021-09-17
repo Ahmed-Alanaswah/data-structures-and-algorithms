@@ -99,10 +99,7 @@ const cookieStores = [firstPike, seaTac, seattleCenter, capHill, alkiBeach];
 
 const grandTotal = (stores) => {
   // Solution code here...
-  // const result = stores.reduce((arr, nextarr) =>
-  //   arr.map((item, index) => item + nextarr[index])
-  // );
-  // return result;
+  
   let newArr = [];
 
   for (let i = 0; i < stores[0].length; i++) {
