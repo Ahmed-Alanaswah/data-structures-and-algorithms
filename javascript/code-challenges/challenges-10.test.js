@@ -131,9 +131,7 @@ const salesData = (hours, data) => {
   let newArr = [];
   for(let i=0;i< hours.length ; i++){
       newArr.push({ sales: data[i] + ' cookies', time: hours[i] });
-
   } 
-
   return newArr;
 };
 
