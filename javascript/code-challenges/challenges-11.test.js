@@ -97,7 +97,7 @@ const divisibleByFiveTwoToThePower = (input) => {
     return arr2
       .map((num) => (num % 5 === 0 ? Math.pow(2, num) : null))
       .filter(function (el) {
-        return el != null;
+        return el !== null;
       });
   });
   return newArr;
