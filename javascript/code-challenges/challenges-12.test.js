@@ -9,7 +9,9 @@ Write a function named replaceZeros that, given a string, uses Regex to replace 
 const replaceZeros = (string) => {
   // Solution code here...
 
-  string.replace(/(0)/, "zero");
+  const regex = /([0])/g;
+  const found = string.replace(regex, "zero");
+  return found;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -22,11 +24,9 @@ If the PIN is four numerical digits long, return true. Otherwise, return false.
 
 const validatePin = (pin) => {
   // Solution code here...
-  if (pin.match(/(^[0-9]{0,4})/)) {
-    return true;
-  } else {
-    return false;
-  }
+
+  let globalRegex = /^[0-9]{4}$/;
+  return globalRegex.test(pin);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -39,6 +39,8 @@ If the word is between 5 and 10 characters long, return true. Otherwise, return 
 
 const validateWord = (word) => {
   // Solution code here...
+  let globalRegex = /^[A-z]{5,10}$/;
+  return globalRegex.test(word);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -51,6 +53,9 @@ If it does, return true. If not, return false.
 
 const hasNumber = (string) => {
   // Solution code here...
+
+  let globalRegex = /[A-z][0-9]/;
+  return globalRegex.test(string);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -71,6 +76,8 @@ Note: if you ever need to validate an email using a regex in practice, the Inter
 
 const validateEmail = (email) => {
   // Solution code here...
+  var emailPattern = /^([a-zA-Z0-9_.-])+@(([a-zA-Z0-9-])+\.)+(net|com|org)$/;
+  return emailPattern.test(email);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -96,6 +103,9 @@ Return either true or false.
 
 const validatePhoneNumber = (phoneNumber) => {
   // Solution code here...
+  var emailPattern = /^\(?([0-9]{3})\)?\s?-?([0-9]{3})\s?-?([0-9]{4})$/;
+
+  return emailPattern.test(phoneNumber);
 };
 
 /* ------------------------------------------------------------------------------------------------
