@@ -8,12 +8,10 @@ Write a function named longestString that takes in an array of strings and retur
 
 const longestString = (arr) => {
   // Solution code here...
-  let longest = arr.reduce(
-    (a,
-    (b) => {
-      return a;
-    })
-  );
+  let newArr = arr.map((str) => str.length);
+
+  let indexNuber = newArr.indexOf(Math.max(...newArr));
+  return indexNuber;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -27,7 +25,7 @@ For example, ['this is great :)', 'wow', 'whyyyyyy :(', ':)))))'] returns ['t', 
 const firstLetters = (arr) => {
   // Solution code here...
   let NewArr = arr.map((str) => {
-    str.split("").splice(0, 1).join("");
+    return str.split("").splice(0, 1).join("");
   });
 
   return NewArr;
@@ -94,6 +92,21 @@ Write a function named allHappy that takes in an array of strings and returns a 
 
 const allHappy = (arr) => {
   // Solution code here...
+  let newArr = arr.filter((str) => {
+    return str.includes(":)");
+  });
+
+  if (newArr.length === arr.length) {
+    return true;
+  } else {
+    return false;
+  }
+
+  // let truthy = newArr.reduce((a, b) => {
+  //   return a && b;
+  // });
+
+  // return truthy;
 };
 
 /* ------------------------------------------------------------------------------------------------
