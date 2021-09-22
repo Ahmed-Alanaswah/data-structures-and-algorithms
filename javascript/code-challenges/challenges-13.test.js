@@ -8,7 +8,12 @@ Write a function named longestString that takes in an array of strings and retur
 
 const longestString = (arr) => {
   // Solution code here...
-  "npm test 13";
+  let longest = arr.reduce(
+    (a,
+    (b) => {
+      return a;
+    })
+  );
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -21,6 +26,11 @@ For example, ['this is great :)', 'wow', 'whyyyyyy :(', ':)))))'] returns ['t', 
 
 const firstLetters = (arr) => {
   // Solution code here...
+  let NewArr = arr.map((str) => {
+    str.split("").splice(0, 1).join("");
+  });
+
+  return NewArr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -33,6 +43,10 @@ For example, ['this is great :)', 'wow', 'whyyyyyy :(', ':)))))'] returns ['this
 
 const findHappiness = (arr) => {
   // Solution code here...
+  let NewArr = arr.filter((str) => {
+    return str.includes(":)");
+  });
+  return NewArr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -45,6 +59,11 @@ For example, (123) 456-7890 returns 1234567890
 
 const standardizePhoneNumbers = (arr) => {
   // Solution code here...
+  let newArr = arr.map((str) => {
+    return str.replace(/[" "]|-|\)|\(/g, "");
+  });
+
+  return newArr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -57,6 +76,14 @@ For example, 'abcdefg' returns 'bdf'
 
 const onlyOddChars = (str) => {
   // Solution code here...
+  let newArr = str
+    .split("")
+    .filter((car) => {
+      return str.indexOf(car) % 2;
+    })
+    .join("");
+
+  return newArr;
 };
 
 /* ------------------------------------------------------------------------------------------------
