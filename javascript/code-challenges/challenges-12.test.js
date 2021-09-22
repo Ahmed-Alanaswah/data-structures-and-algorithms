@@ -103,7 +103,8 @@ Return either true or false.
 
 const validatePhoneNumber = (phoneNumber) => {
   // Solution code here...
-  var emailPattern = /^\(?([0-9]{3})\)?\s?-?([0-9]{3})\s?-?([0-9]{4})$/;
+  var emailPattern =
+    /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4}$/im;
 
   return emailPattern.test(phoneNumber);
 };
