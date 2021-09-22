@@ -40,17 +40,7 @@ For example, count(5, [[1, 3, 5, 7, 9], [5, 5, 5], [1, 2, 3]]) returns 4.
 const count = (target, input) => {
   // Solution code here...
 
-  let newArr = input.map((arr) => {
-    let filtered = arr.filter((num) => num == target);
 
-    return filtered.length;
-  });
-
-  let sum = newArr.reduce((a, b) => {
-    return a + b;
-  });
-
-  return sum;
 };
 
 /* ------------------------------------------------------------------------------------------------
