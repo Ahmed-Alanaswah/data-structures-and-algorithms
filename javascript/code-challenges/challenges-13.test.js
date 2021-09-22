@@ -92,13 +92,21 @@ Write a function named allHappy that takes in an array of strings and returns a 
 
 const allHappy = (arr) => {
   // Solution code here...
-  let newArr = arr.map((str) => {
+  let newArr = arr.filter((str) => {
     return str.includes(":)");
   });
 
-  let truthy = newArr.reduce((a, b) => a && b);
+  if (newArr.length === arr.length) {
+    return true;
+  } else {
+    return false;
+  }
 
-  return truthy;
+  // let truthy = newArr.reduce((a, b) => {
+  //   return a && b;
+  // });
+
+  // return truthy;
 };
 
 /* ------------------------------------------------------------------------------------------------
