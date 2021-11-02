@@ -8,7 +8,7 @@ Write a function called reverseArray which takes an array as an argument. Withou
 
 <!-- Embedded whiteboard image -->
 
-![code](code1.png)
+<img src ='./code1.png' />
 
 ## Approach & Efficiency
 
