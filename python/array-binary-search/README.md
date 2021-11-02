@@ -8,7 +8,7 @@ Write a function called BinarySearch which takes in 2 parameters: a sorted array
 
 <!-- Embedded whiteboard image -->
 
-<img src ='./code3.png' />
+<img src ='./code3.PNG' />
 
 ## Approach & Efficiency
 

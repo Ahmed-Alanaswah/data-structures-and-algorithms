@@ -8,7 +8,7 @@ Write a function called insertShiftArray which takes in an array and a value to 
 
 <!-- Embedded whiteboard image -->
 
-<img src ='./code2.png' />
+<img src ='./code2.PNG' />
 
 ## Approach & Efficiency
 
