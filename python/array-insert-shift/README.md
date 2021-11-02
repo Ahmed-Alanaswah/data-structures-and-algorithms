@@ -1,4 +1,4 @@
-# Reverse an Array
+# array-insert-shift
 
 <!-- Description of the challenge -->
 
