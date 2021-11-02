@@ -77,5 +77,5 @@ From the root of the `data-structures-and-algorithms/python` folder, execute the
 
 
 ## code_chalenges:
-- **code1_reverse_Array:**[reverse_Array](https://github.com/Ahmed-Alanaswah/data-structures-and-algorithms/blob/main/python/reverse_linked_list/README.md)
--**code2_array-insert-shift**:[array-insert-shift](https://github.com/Ahmed-Alanaswah/data-structures-and-algorithms/blob/main/python/array-insert-shift/README.md)
+1. **de1_reverse_Array:**[reverse_Array](https://github.com/Ahmed-Alanaswah/data-structures-and-algorithms/blob/main/python/reverse_linked_list/README.md)
+2. **e2_array-insert-shift**:[array-insert-shift](https://github.com/Ahmed-Alanaswah/data-structures-and-algorithms/blob/main/python/array-insert-shift/README.md)
