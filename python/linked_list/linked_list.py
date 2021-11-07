@@ -54,6 +54,7 @@ class LinkedList:
                 current= current.next   
             output += "None"
             return output
+            
 ll=LinkedList()
 ll.append(1)
 ll.append(2)
