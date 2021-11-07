@@ -72,5 +72,5 @@ ll.insert(0)
 
 if __name__== "__main__":
     print(ll)
-    print(ll.include(20))
+    print(ll.include(0))
 
