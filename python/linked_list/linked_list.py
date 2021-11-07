@@ -9,11 +9,14 @@ class LinkedList:
     def append(self,value):
         node= Node(value)
         if self.head is None:
+
             self.head=node
+
         else:
             current= self.head
             while current.next != None:
                 current = current.next
+
             current.next = node
 
     def insert(self,value):
@@ -45,24 +48,29 @@ class LinkedList:
 
     def __str__(self):
         output = "head -> "
+
         if self.head is None:
             output += None
         else:
             current = self.head
+
             while(current) :
                 output += f"{current.value} -> " 
                 current= current.next   
             output += "None"
             return output
             
+
 ll=LinkedList()
 ll.append(1)
 ll.append(2)
 ll.append(3)
 ll.append(4)
 
+
 ll.insert(0)
 
 if __name__== "__main__":
     print(ll)
     print(ll.include(20))
+
