@@ -67,6 +67,13 @@ def test_addafterhello_to_existing_ll(ll):
     actual =ll.__str__()
     assert expected == actual
 
+def test_printNthFromLast_to_existing_ll(ll):
+    ll.printNthFromLast(1)
+    expected=1.57
+    actual =ll.printNthFromLast(1)
+    assert expected == actual
+
+
 @pytest.fixture
 def ll():
     ll=LinkedList()

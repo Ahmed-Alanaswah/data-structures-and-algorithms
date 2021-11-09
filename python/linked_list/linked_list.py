@@ -81,13 +81,25 @@ class LinkedList:
             newNode.next =current.next
             current.next = newNode
 
-        # if current.next is None:
-        #     print("dude !! you need messed up ,there is no next node !!")
-        #     return 
-        # else:
-        #     newNode = Node(value)
-        #     newNode.next =prevNode.next
-        #     prevNode.next = newNode
+
+    def printNthFromLast(self, n):
+        temp = self.head # used temp variable
+          
+        length = 0
+        while temp is not None:
+            temp = temp.next
+            length += 1
+          
+        # print count 
+        if n > length: # if entered location is greater 
+                       # than length of linked list
+            print('Location is greater than the' +
+                         ' length of LinkedList')
+            return
+        temp = self.head
+        for i in range(0, length - n):
+            temp = temp.next
+        return temp.value
         
 
 
@@ -118,8 +130,10 @@ ll.insert("a")
 
 if __name__== "__main__":
     print(ll)
-    print(ll.include(0))
-    print(ll.addAfter(6,2))
+    print(ll.printNthFromLast(1))
+    # print(ll.include(0))
+    # print(ll.addAfter(6,2))
     # print(ll.addBefor("b",4))
     # print(ll.addBefor("d","b"))
-    print(ll)
+   
+    
