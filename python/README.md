@@ -80,3 +80,4 @@ From the root of the `data-structures-and-algorithms/python` folder, execute the
 1. **de1_reverse_Array:**[reverse_Array](https://github.com/Ahmed-Alanaswah/data-structures-and-algorithms/blob/main/python/reverse_linked_list/README.md)
 2. **e2_array-insert-shift**:[array-insert-shift](https://github.com/Ahmed-Alanaswah/data-structures-and-algorithms/blob/main/python/array-insert-shift/README.md)
 3. **printNthFromLast**:[printNthFromLast]( https://github.com/Ahmed-Alanaswah/data-structures-and-algorithms/tree/main/python/linked_list)
+4. [**zip functiont**:](https://github.com/Ahmed-Alanaswah/data-structures-and-algorithms/tree/main/python/linked_list_zip)
