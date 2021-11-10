@@ -74,6 +74,12 @@ def test_printNthFromLast_to_existing_ll(ll):
     assert expected == actual
 
 
+def test_ziplist(ll,ll2):
+    ll.ziplist(ll,ll2)
+    expected="head -> 5 -> 1 -> hello -> 2 -> 1.57 -> 3 -> None"
+    actual =ll.__str__()
+    assert expected == actual
+
 @pytest.fixture
 def ll():
     ll=LinkedList()
@@ -81,4 +87,12 @@ def ll():
     ll.append('hello') 
     ll.append(1.57)
    
-    return ll 
+    return ll
+@pytest.fixture
+def ll2():
+    ll2=LinkedList()
+    ll2.append(1) 
+    ll2.append(2) 
+    ll2.append(3)
+   
+    return ll2 

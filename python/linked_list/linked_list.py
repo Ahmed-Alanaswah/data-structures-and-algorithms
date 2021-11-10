@@ -101,7 +101,22 @@ class LinkedList:
             temp = temp.next
         return temp.value
         
-
+    def ziplist(self,list1,list2):
+     
+        current1 = list1.head
+        current2 = list2.head
+        if list1 is None:
+            return list2
+        if list2 is None:
+            return list1 
+        while current1 != None and current2 != None:
+            first_curr= current1.next
+            sconed_curr= current2.next
+            current1.next = current2
+            current2.next = first_curr
+            current1 = first_curr
+            current2 = sconed_curr
+ 
 
     def __str__(self):
         output = "head -> "
@@ -118,22 +133,30 @@ class LinkedList:
             return output
             
 
+    
 ll=LinkedList()
 ll.append(1)
 ll.append(2)
 ll.append(3)
 ll.append(4)
+ll.append(5)
+ll.append(5)
 
 
 ll.insert(0)
 ll.insert("a")
 
+ll2=LinkedList()
+ll2.append(5)
+ll2.append(6)
+ll2.append(7)
+ll2.append(8)
+ll2.append(9)
+
 if __name__== "__main__":
     print(ll)
-    print(ll.printNthFromLast(1))
-    # print(ll.include(0))
-    # print(ll.addAfter(6,2))
-    # print(ll.addBefor("b",4))
-    # print(ll.addBefor("d","b"))
-   
-    
+    print("===================")
+    print(ll2)
+    print("====================")
+    ll.ziplist(ll,ll2)
+    print(ll.__str__())
