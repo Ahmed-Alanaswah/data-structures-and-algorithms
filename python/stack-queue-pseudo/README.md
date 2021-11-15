@@ -7,5 +7,5 @@ Internally, utilize 2 Stack instances to create and manage the queue
 
 ## Whiteboard Process
 
-<img src ='./code11.png' />
+<img src ='./code11.PNG' />
 <!-- Embedded whiteboard image -->
