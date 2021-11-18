@@ -1,3 +1,6 @@
+import re
+
+
 class Node:
     def __init__(self,value):
         self.value=value
@@ -117,6 +120,26 @@ class LinkedList:
             current1 = first_curr
             current2 = sconed_curr
  
+    def reverse(self):
+        prev = None
+        current = self.head
+        while(current is not None):
+            next = current.next
+            current.next = prev
+            prev = current
+            current = next
+        self.head = prev 
+
+    def palindrome(ll1):
+        ll2 =ll1.reverse()
+        if ll2 == ll1 :
+            return True
+        else :
+            return False
+
+        
+        
+            
 
     def __str__(self):
         output = "head -> "
@@ -153,10 +176,17 @@ ll2.append(7)
 ll2.append(8)
 ll2.append(9)
 
+
 if __name__== "__main__":
     print(ll)
     print("===================")
     print(ll2)
-    print("====================")
-    ll.ziplist(ll,ll2)
+    # print("====================")
+    # ll.ziplist(ll,ll2)
+    # print(ll.__str__())
+    print("===================")
+    ll.reverse()
+    print(ll.__str__())
+    print("===================")
+    ll.palindrome(ll)
     print(ll.__str__())

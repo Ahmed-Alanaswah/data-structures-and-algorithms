@@ -50,10 +50,7 @@ class LinkedList:
             current2.next = first_curr
             current1 = first_curr
             current2 = sconed_curr
-        # if current1 is None:
-        #     return current2
-        # if current2 is None:
-        #     return current1
+     
          
     def tostr(self):
         output = "head -> "
