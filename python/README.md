@@ -83,3 +83,4 @@ From the root of the `data-structures-and-algorithms/python` folder, execute the
 4. **zip functiont**:[zip function](https://github.com/Ahmed-Alanaswah/data-structures-and-algorithms/tree/main/python/linked_list_zip)
 5. **stack-queue-pseudo:**[*stack-queue-pseudo](https://github.com/Ahmed-Alanaswah/data-structures-and-algorithms/tree/main/python/stack-queue-pseudo#readme)
 6. **stack-queue-animal-shelter**:[stack-queue-animal-shelter](https://github.com/Ahmed-Alanaswah/data-structures-and-algorithms/tree/main/python/stack-queue-animal-shelter)
+7. **stack-queue-brackets**:[stack-queue-brackets](https://github.com/Ahmed-Alanaswah/data-structures-and-algorithms/tree/main/python/stack-queue-brackets#readme)
