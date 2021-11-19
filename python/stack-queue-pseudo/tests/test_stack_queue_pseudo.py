@@ -10,8 +10,8 @@ def test_version():
 
 def test_is_empty():
     queue= PseudoQueue()
-    expected = []
-    actual = queue.empty()
+    expected = True
+    actual = queue.s1.is_empty()
 
     assert expected == actual
 
@@ -23,7 +23,7 @@ def test_enqueue():
     queue.enqueue("python")
 
     expected ="python"
-    actual = queue.s1[0]
+    actual = queue.s1.top.value
 
     assert expected==actual
 
@@ -37,9 +37,8 @@ def test_dequeue():
     queue.enqueue("python")
    
    
-
     expected =1
-    actual  = queue.s1[-1]
+    actual  =  queue.dequeue()
 
     assert expected==actual
 
@@ -51,7 +50,7 @@ def test_peek():
     queue.enqueue(2)
     queue.enqueue("python")
    
-    peek= queue.s1[0]
+    peek= queue.s1.top.value
 
     expected ="python"
     actual =   peek
