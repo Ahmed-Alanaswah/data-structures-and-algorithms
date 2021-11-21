@@ -51,7 +51,7 @@ class BinarySearchTree:
     def __init__(self):
         self.root = None
 
-    def insert(self,value):
+    def Add(self,value):
         if self.root is None:
             self.root = Node(value)
         else:
@@ -73,7 +73,7 @@ class BinarySearchTree:
         else:
             print("value is  already present in tree")
 
-    def find(self,value):
+    def Contain(self,value):
         if self.root:
             is_found = self._find(value,self.root)
 
@@ -108,12 +108,12 @@ print(tree.print_tree("postorder"))
 print("============")
 bst = BinarySearchTree()
 
-bst.insert(4)
-bst.insert(2)
-bst.insert(8)
-bst.insert(5)
-bst.insert(10)
-print(bst.find(12))
+bst.Add(4)
+bst.Add(2)
+bst.Add(8)
+bst.Add(5)
+bst.Add(10)
+print(bst.Contain(12))
 
 # class Tree:
 #     def __init__(self):

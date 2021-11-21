@@ -28,12 +28,12 @@ def test_post_oder(create_tree):
 
 def test_Find():
         bst=BinarySearchTree()
-        bst.insert(4)
-        bst.insert(2)
-        bst.insert(8)
-        bst.insert(5)
-        bst.insert(10)
-        actual = bst.find(10)
+        bst.Add(4)
+        bst.Add(2)
+        bst.Add(8)
+        bst.Add(5)
+        bst.Add(10)
+        actual = bst.Contain(10)
         expected = True
         assert actual == expected
 
@@ -41,7 +41,7 @@ def test_Find():
 def test_empty_b():
         bst=BinarySearchTree()
         
-        actual =bst.insert(4)
+        actual =bst.Add(4)
         expected = None
         assert actual == expected
 
