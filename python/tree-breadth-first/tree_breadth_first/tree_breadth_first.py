@@ -37,14 +37,14 @@ class BinaryTree(object):
     def print_tree(self, traversal_type):
     
         if traversal_type == "levelorder":
-            return self.levelorder_print(tree.root)
+            return self.tree_breadth_first(tree.root)
 
         else:
             print("Traversal type " + str(traversal_type) + " is not supported.")
             return False
 
 
-    def levelorder_print(self, start):
+    def tree_breadth_first(self, start):
         if start is None:
             return 
 
