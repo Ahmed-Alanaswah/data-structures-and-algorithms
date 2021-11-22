@@ -86,3 +86,4 @@ From the root of the `data-structures-and-algorithms/python` folder, execute the
 7. **stack-queue-brackets**:[stack-queue-brackets](https://github.com/Ahmed-Alanaswah/data-structures-and-algorithms/tree/main/python/stack-queue-brackets#readme)
 8. **Tree**:[Tree](https://github.com/Ahmed-Alanaswah/data-structures-and-algorithms/tree/main/python/trees)
 9. **max tree value**:[max tree value](https://github.com/Ahmed-Alanaswah/data-structures-and-algorithms/tree/main/python/tree-max)
+10. **tree breadth first**: [tree breadth first](https://github.com/Ahmed-Alanaswah/data-structures-and-algorithms/tree/main/python/tree-breadth-first)
