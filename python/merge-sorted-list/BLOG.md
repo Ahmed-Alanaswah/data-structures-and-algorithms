@@ -4,5 +4,5 @@ the challenge is about convert pseudo code to real code and test it about sort f
 
 ## Whiteboard Process
 
-<img src ='./code28.PNG' />
-<img src ='./code282.PNG' />
+<img src ='./code28.png' />
+<img src ='./code282.png' />
