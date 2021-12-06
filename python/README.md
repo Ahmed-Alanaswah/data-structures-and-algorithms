@@ -89,3 +89,4 @@ From the root of the `data-structures-and-algorithms/python` folder, execute the
 10. **tree breadth first**: [tree breadth first](https://github.com/Ahmed-Alanaswah/data-structures-and-algorithms/tree/main/python/tree-breadth-first)
 11. **fizz buzz function**:[fizz-buzz-function](https://github.com/Ahmed-Alanaswah/data-structures-and-algorithms/tree/main/python/tree-fizz-buzz#readme)
 12. **sort array and verfiying code (code 26)** :[sort array and verfiying code (code 26)](https://github.com/Ahmed-Alanaswah/data-structures-and-algorithms/blob/main/python/sort-list/BLOG.md)
+13. **MERGE SORTED ARRAY**:[MERGE SORTED ARRAY](https://github.com/Ahmed-Alanaswah/data-structures-and-algorithms/blob/main/python/merge-sorted-list/BLOG.md)
