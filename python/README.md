@@ -91,3 +91,4 @@ From the root of the `data-structures-and-algorithms/python` folder, execute the
 12. **sort array and verfiying code (code 26)** :[sort array and verfiying code (code 26)](https://github.com/Ahmed-Alanaswah/data-structures-and-algorithms/blob/main/python/sort-list/BLOG.md)
 13. **MERGE SORTED ARRAY**:[MERGE SORTED ARRAY](https://github.com/Ahmed-Alanaswah/data-structures-and-algorithms/blob/main/python/merge-sorted-list/BLOG.md)
 14. **quick sort**:[quick sort algorithms](https://github.com/Ahmed-Alanaswah/data-structures-and-algorithms/blob/main/python/QuickSort/BLOG.md)
+15. **hash map repeated first word**: [hash map repeated first word](https://github.com/Ahmed-Alanaswah/data-structures-and-algorithms/blob/main/python/hashmap-repeated-word/README.md)
