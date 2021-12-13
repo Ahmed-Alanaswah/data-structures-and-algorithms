@@ -1,10 +1,10 @@
 # from hashtable import hashtable
 
-from linkedlist import LinkedList,Node
+from linkedList import LinkedList,Node
 
 
 class HashTable(object):
-    def __init__(self,size=20):
+    def __init__(self,size=200):
         self.size= size
         self.map = [None]*size
 
@@ -20,22 +20,22 @@ class HashTable(object):
         return hashed_key
 
 
-    def add(self,key,value):
+    def add(self,key):
         
         hashed_key = self.custom_hash(key)
         if not self.map[hashed_key]:
-            self.map[hashed_key]  = value
+            self.map[hashed_key]  = key
         else:
 
             if isinstance(self.map[hashed_key],LinkedList):
                
-                self.map[hashed_key].append([key,value])
+                self.map[hashed_key].append(key)
                 return
             else:
 
                 chain = LinkedList()
                 existing_pair = self.map[hashed_key]
-                new_pair = value
+                new_pair = key
                 self.map[hashed_key] = chain
 
                 chain.append(existing_pair)
@@ -57,19 +57,19 @@ class HashTable(object):
 
 
 
-if __name__=="__main__":
+# if __name__=="__main__":
 
-    hash_table=HashTable()
-    hash_table.add("ahmad",30)
-    hash_table.add("ali",40)
-    hash_table.add("hamad",50)
+#     hash_table=HashTable()
+#     hash_table.add("ahmad")
+#     hash_table.add("ali")
+#     hash_table.add("hamad")
 
 
-    for index,item in enumerate(hash_table.map):
-        if item:
-            print(index,item)
+#     for index,item in enumerate(hash_table.map):
+#         if item:
+#             print(index,item)
 
-    print(hash_table.contains('hamad'))
-    print(hash_table.contains('kk'))
-    print(hash_table.contains('ahmad'))
-    print(hash_table.map)
+#     print(hash_table.contains('hamad'))
+#     print(hash_table.contains('kk'))
+#     print(hash_table.contains('ahmad'))
+#     print(hash_table.map)
