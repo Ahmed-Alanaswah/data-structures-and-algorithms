@@ -16,7 +16,7 @@ class Queue:
     self.dq.append(value)
   
   def dequeue(self):
-    return self.dq.pop(0)
+    return self.dq.pop()
   
   def __len__(self):
     return len(self.dq)
@@ -108,27 +108,38 @@ class Graph:
   What is doing: it will traverse throught all nodes
   Return: A list of nodes
   """
-  def bfs(self, start_vertex):
-    queue = Queue()
-    result = []
-    visited = set()
+  def breadth_first(self,start_vertex):
 
-    queue.enqueue(start_vertex)
-    visited.add(start_vertex)
-    result.append(start_vertex)
+        queue=Queue()
+        visited=set()
+        result=[]
+        queue.enqueue(start_vertex)
+        visited.add(start_vertex)
+        result.append(start_vertex.value)
+        if start_vertex==None:
+            return "It is an empty graph"
+        while len(queue):
+            current_vertex = queue.dequeue()
 
-    while len(queue):
-      current_vertex = queue.dequeu()
+        neighbors = self.get_neighbors(current_vertex)
 
-      neighbors = self.get_neighbors(current_vertex)
+        for edge in neighbors:
+            neighbor = edge.vertex
 
-      for edge in neighbors:
-        neighbor = edge.vertex
+            if neighbor not in visited:
+                queue.enqueue(neighbor)
+                visited.add(neighbor)
+                result.append(neighbor.value)
 
-        if neighbor not in visited:
-          queue.enqueue(neighbor)
-          visited.add(neighbor)
-          result.append(neighbor)
+        return result
 
-    return result
 
+if __name__=="__main__":
+    graph=Graph()
+    val1=graph.add_node("A")
+    val2=graph.add_node("B")
+    val3=graph.add_node("C")
+    graph.add_edge(val1,val2,50)
+    graph.add_edge(val1,val3,1)
+    graph.add_edge(val2,val3,1)
+    print(graph.breadth_first(val1))
