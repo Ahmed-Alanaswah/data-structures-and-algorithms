@@ -134,6 +134,29 @@ class Graph:
         return result
 
 
+def business_trip(graph, array):
+    
+    try:
+        cost = 0
+        for city in range(len(array)):
+            edges = graph.get_neighbors(array[city])
+
+            if city + 1 <= len(array) -1:
+
+                cost_check = cost
+
+                for neighbor in edges:
+                    if array[city + 1] == neighbor.vertex:
+                        cost += neighbor.weight
+
+                if cost == cost_check:
+                    return None
+
+        return f'${cost}'
+
+    except:
+        raise Exception("Please check your inputs and try again.")
+
 if __name__=="__main__":
     graph=Graph()
     val1=graph.add_node("A")
@@ -143,3 +166,6 @@ if __name__=="__main__":
     graph.add_edge(val1,val3,1)
     graph.add_edge(val2,val3,1)
     print(graph.breadth_first(val1))
+
+    print('===========')
+    print(business_trip(graph, ["Arendelle", "Monstropolis", "Naboo"]))
