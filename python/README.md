@@ -96,3 +96,4 @@ From the root of the `data-structures-and-algorithms/python` folder, execute the
 17. **left join**:[left join ](https://github.com/Ahmed-Alanaswah/data-structures-and-algorithms/blob/main/python/hashmap-left-join/README.md)
 18. **graph**:[graph](https://github.com/Ahmed-Alanaswah/data-structures-and-algorithms/pull/58)
 19. **bfs**:[bfs](https://github.com/Ahmed-Alanaswah/data-structures-and-algorithms/blob/main/python/graph/README.md)
+20. **buisniss trip**:[buisniss trip](https://github.com/Ahmed-Alanaswah/data-structures-and-algorithms/pull/60)
