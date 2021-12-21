@@ -132,7 +132,19 @@ class Graph:
                 result.append(neighbor.value)
 
         return result
+  def depth_first(self ,start_vertex):
+        list_of_items = []
+        list_of_items.append(start_vertex.value)
 
+        def walk(vertex):
+            edge =self.__adj_list[vertex]
+            for v in edge:
+                my_vertex = v.vertex.value
+                if my_vertex not in list_of_items:
+                    list_of_items.append(my_vertex)
+                    walk(v.vertex)
+        walk(start_vertex)
+        return list_of_items
 
 def business_trip(graph, array):
     
@@ -157,15 +169,32 @@ def business_trip(graph, array):
     except:
         raise Exception("Please check your inputs and try again.")
 
-if __name__=="__main__":
-    graph=Graph()
-    val1=graph.add_node("A")
-    val2=graph.add_node("B")
-    val3=graph.add_node("C")
-    graph.add_edge(val1,val2,50)
-    graph.add_edge(val1,val3,1)
-    graph.add_edge(val2,val3,1)
-    print(graph.breadth_first(val1))
+# if __name__=="__main__":
+#     graph=Graph()
+#     val1=graph.add_node("A")
+#     val2=graph.add_node("B")
+#     val3=graph.add_node("C")
+#     graph.add_edge(val1,val2,50)
+#     graph.add_edge(val1,val3,1)
+#     graph.add_edge(val2,val3,1)
+#     print(graph.breadth_first(val1))
 
-    print('===========')
-    print(business_trip(graph, ["Arendelle", "Monstropolis", "Naboo"]))
+#     print('===========')
+#     print(business_trip(graph, ["Arendelle", "Monstropolis", "Naboo"]))
+
+
+
+
+graph = Graph()
+
+apple = graph.add_node('apple')
+cherry = graph.add_node('cherry')
+orange = graph.add_node('orange')
+banana = graph.add_node('banana')
+
+graph.add_edge(apple,banana)
+graph.add_edge(orange,banana)
+graph.add_edge(cherry,orange)
+graph.add_edge(banana,cherry)
+
+print(graph.depth_first(apple))
